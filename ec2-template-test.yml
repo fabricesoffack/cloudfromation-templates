@@ -1,0 +1,14 @@
+---
+Resources:
+  MyEC2Instance: 
+    Type: "AWS::EC2::Instance"
+    Properties:
+      InstanceType: "t3.small"
+      ImageId: "ami-06a0cd9728546d178"
+      KeyName: "nov-key"
+      SecurityGroupIds: 
+        - "sg-0aea156cb961d0363"
+      SubnetId: "subnet-08d39aaab79e7b89e"
+      Tags: 
+        - Key: "Name"
+          Value: "myEC2Instance"
